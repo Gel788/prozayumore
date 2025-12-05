@@ -1,15 +1,16 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 
 export const metadata: Metadata = {
   title: 'Продаю Море - Премиальные туры по всему миру',
   description: 'Туристическое агентство Продаю Море. Лучшие туры по всему миру с премиальным сервисом.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({
